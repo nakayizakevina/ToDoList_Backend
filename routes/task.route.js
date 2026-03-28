@@ -4,8 +4,8 @@ import {editTask, deleteTask,displaySingleTask, displayAllTask, createTask} from
 
 const router = Router();
 
-router.route('/').post(createTask);
-router.route('/').get(displayAllTask);
+router.route('/createtask').post(createTask);
+router.route('/getalltasks').get(displayAllTask);
 router.route('/getsingletask/:id').get(displaySingleTask);
 router.route('/deletetask/:id').delete(deleteTask);
 router.route('/edittask/:id').patch(editTask);
